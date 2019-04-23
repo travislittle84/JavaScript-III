@@ -53,8 +53,8 @@ CharacterStats.prototype.takeDamage = function() {
 */
 
 function Humanoid(attr) {
-  GameObject.call(this.attr);     // Inherit GameObject properties
-  CharacterStats.call(this.attr); // Inherit CharacterStats properties -- needed??
+  // GameObject.call(this.attr);     // Inherit GameObject properties
+  CharacterStats.call(this,attr); // Inherit CharacterStats properties -- needed??
   this.team = attr.team;
   this.weapons = attr.weapons;
   this.language = attr.language;
